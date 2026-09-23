@@ -1,0 +1,399 @@
+<!-- ========================= contact.html ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+background:#f5f2ea;
+font-family:Poppins,sans-serif;
+color:#2e3f2f;
+overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 70px;
+border-bottom:1px solid #ddd6c8;
+background:#f5f2ea;
+}
+
+.logo{
+font-size:34px;
+font-family:Montserrat;
+font-weight:800;
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#2e3f2f;
+font-size:17px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+transform:translateY(-2px);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:220px;
+background:#2e3f2f;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:center;
+padding:0 70px;
+}
+
+.circle1{
+position:absolute;
+width:280px;
+height:280px;
+background:#425b3f;
+border-radius:50%;
+top:-90px;
+right:-60px;
+opacity:0.5;
+}
+
+.circle2{
+position:absolute;
+width:200px;
+height:200px;
+background:#d8d2c7;
+border-radius:50%;
+bottom:-70px;
+left:-40px;
+opacity:0.15;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:70px;
+font-family:Montserrat;
+font-weight:800;
+color:white;
+letter-spacing:4px;
+}
+
+.hero p{
+margin-top:12px;
+font-size:15px;
+color:#f1f1f1;
+max-width:650px;
+line-height:1.6;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section{
+padding:70px 70px;
+position:relative;
+}
+
+.big-title{
+font-size:110px;
+font-family:Montserrat;
+font-weight:800;
+opacity:0.05;
+position:absolute;
+top:10px;
+left:70px;
+pointer-events:none;
+}
+
+/* ================= GRID ================= */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+position:relative;
+z-index:2;
+}
+
+/* ================= CARD ================= */
+
+.contact-card{
+background:white;
+border-radius:24px;
+padding:22px 25px;
+position:relative;
+overflow:hidden;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.07);
+
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.contact-card:hover{
+transform:translateY(-6px);
+}
+
+/* DESIGN CIRCLE */
+
+.contact-card::before{
+content:'';
+position:absolute;
+top:-40px;
+right:-40px;
+width:110px;
+height:110px;
+background:#2e3f2f;
+border-radius:50%;
+opacity:0.05;
+}
+
+/* NUMBER */
+
+.number{
+font-size:45px;
+font-family:Montserrat;
+font-weight:800;
+color:#ebe5da;
+position:absolute;
+top:8px;
+right:18px;
+}
+
+/* ICON */
+
+.icon{
+font-size:28px;
+position:relative;
+z-index:2;
+}
+
+/* TITLE */
+
+.contact-card h2{
+font-size:20px;
+font-family:Montserrat;
+position:relative;
+z-index:2;
+margin:0;
+min-width:100px;
+}
+
+/* VALUE */
+
+.value{
+padding:10px 14px;
+background:#f5f2ea;
+border-radius:10px;
+font-size:14px;
+display:inline-block;
+transition:0.3s;
+position:relative;
+z-index:2;
+white-space:nowrap;
+}
+
+.contact-card:hover .value{
+background:#2e3f2f;
+color:white;
+padding-left:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:950px){
+
+nav{
+flex-direction:column;
+gap:20px;
+padding:20px 30px;
+}
+
+.nav-links{
+justify-content:center;
+gap:20px;
+}
+
+.hero{
+padding:0 40px;
+height:220px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.contact-section{
+padding:60px 30px;
+}
+
+.big-title{
+font-size:70px;
+left:30px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.contact-card{
+flex-direction:column;
+align-items:flex-start;
+gap:12px;
+}
+
+.value{
+white-space:normal;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">Portfolio.</div>
+
+<div class="nav-links">
+
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="skills.html">SKILLS</a>
+<a href="projects.html">PROJECTS</a>
+<a href="certifications.html">CERTIFICATIONS</a>
+<a href="contact.html">CONTACT</a>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="hero-content">
+
+<h1>CONTACT</h1>
+
+<p>
+Feel free to connect with me for projects, collaboration, internships, and opportunities.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section">
+
+<div class="big-title">CONNECT</div>
+
+<div class="contact-grid">
+
+<!-- EMAIL -->
+
+<div class="contact-card">
+
+<div class="number">01</div>
+
+<div class="icon">📧</div>
+
+<h2>Email</h2>
+
+<div class="value">daaniyasyeeda@gmail.com</div>
+
+</div>
+
+<!-- PHONE -->
+
+<div class="contact-card">
+
+<div class="number">02</div>
+
+<div class="icon">📱</div>
+
+<h2>Phone</h2>
+
+<div class="value">+91 7483158583</div>
+
+</div>
+
+<!-- LINKEDIN -->
+
+<div class="contact-card">
+
+<div class="number">03</div>
+
+<div class="icon">💼</div>
+
+<h2>LinkedIn</h2>
+
+<div class="value">Sayeeda Daaniya</div>
+
+</div>
+
+<!-- LOCATION -->
+
+<div class="contact-card">
+
+<div class="number">04</div>
+
+<div class="icon">📍</div>
+
+<h2>Location</h2>
+
+<div class="value">Ballari, Karnataka, India</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

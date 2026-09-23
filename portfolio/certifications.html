@@ -1,0 +1,532 @@
+<!-- ========================= certifications.html ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certifications</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f5f2ea;
+font-family:Poppins,sans-serif;
+color:#2e3f2f;
+overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 70px;
+border-bottom:1px solid #ddd6c8;
+background:#f5f2ea;
+}
+
+.logo{
+font-size:34px;
+font-family:Montserrat;
+font-weight:800;
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#2e3f2f;
+font-size:17px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+transform:translateY(-2px);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:220px;
+background:#2e3f2f;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:center;
+padding:0 70px;
+}
+
+.circle1{
+position:absolute;
+width:280px;
+height:280px;
+background:#425b3f;
+border-radius:50%;
+top:-90px;
+right:-60px;
+opacity:0.5;
+}
+
+.circle2{
+position:absolute;
+width:200px;
+height:200px;
+background:#d8d2c7;
+border-radius:50%;
+bottom:-70px;
+left:-40px;
+opacity:0.15;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:70px;
+font-family:Montserrat;
+font-weight:800;
+color:white;
+letter-spacing:4px;
+}
+
+.hero p{
+margin-top:12px;
+font-size:15px;
+color:#f1f1f1;
+max-width:650px;
+line-height:1.6;
+}
+
+/* ================= CERTIFICATIONS SECTION ================= */
+
+.certifications-section{
+padding:70px 70px;
+position:relative;
+}
+
+.big-title{
+font-size:110px;
+font-family:Montserrat;
+font-weight:800;
+opacity:0.05;
+position:absolute;
+top:10px;
+left:70px;
+pointer-events:none;
+}
+
+/* ================= GRID ================= */
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+position:relative;
+z-index:2;
+align-items:start;
+}
+
+/* ================= CARD ================= */
+
+.cert-card{
+background:white;
+border-radius:24px;
+padding:25px;
+position:relative;
+overflow:hidden;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
+
+.cert-card:hover{
+transform:translateY(-6px);
+}
+
+/* DESIGN CIRCLE */
+
+.cert-card::before{
+content:'';
+position:absolute;
+top:-40px;
+right:-40px;
+width:110px;
+height:110px;
+background:#2e3f2f;
+border-radius:50%;
+opacity:0.05;
+}
+
+/* NUMBER */
+
+.number{
+font-size:55px;
+font-family:Montserrat;
+font-weight:800;
+color:#ebe5da;
+position:absolute;
+top:8px;
+right:18px;
+}
+
+/* ICON */
+
+.icon{
+font-size:32px;
+margin-bottom:12px;
+position:relative;
+z-index:2;
+}
+
+/* TITLE */
+
+.cert-card h2{
+font-size:20px;
+font-family:Montserrat;
+margin-bottom:16px;
+position:relative;
+z-index:2;
+line-height:1.5;
+}
+
+/* DESCRIPTION */
+
+.cert-card p{
+font-size:14px;
+line-height:1.8;
+color:#445344;
+position:relative;
+z-index:2;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+.cert-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:950px){
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+justify-content:center;
+gap:20px;
+}
+
+.hero{
+padding:0 40px;
+height:220px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.certifications-section{
+padding:60px 40px;
+}
+
+.big-title{
+font-size:70px;
+left:40px;
+}
+
+.cert-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">Portfolio.</div>
+
+<div class="nav-links">
+
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="skills.html">SKILLS</a>
+<a href="projects.html">PROJECTS</a>
+<a href="certifications.html">CERTIFICATIONS</a>
+<a href="contact.html">CONTACT</a>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="hero-content">
+
+<h1>CERTIFICATIONS</h1>
+
+<p>
+Professional certifications and learning achievements in programming, databases, AI, operating systems, and modern technologies.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= CERTIFICATIONS SECTION ================= -->
+
+<section class="certifications-section">
+
+<div class="big-title">CERTS</div>
+
+<div class="cert-grid">
+
+<!-- CERTIFICATE 1 -->
+
+<div class="cert-card">
+
+<div class="number">01</div>
+
+<div class="icon">🐍</div>
+
+<h2>Basics of Python</h2>
+
+<p>
+Completed certification covering Python fundamentals, syntax, logic building, and basic programming concepts.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 2 -->
+
+<div class="cert-card">
+
+<div class="number">02</div>
+
+<div class="icon">💻</div>
+
+<h2>Introduction to Python</h2>
+
+<p>
+Learned introductory Python programming concepts including variables, loops, functions, and problem solving.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 3 -->
+
+<div class="cert-card">
+
+<div class="number">03</div>
+
+<div class="icon">🧠</div>
+
+<h2>Programming in C</h2>
+
+<p>
+Completed training in C programming including logic development, arrays, loops, and functions.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 4 -->
+
+<div class="cert-card">
+
+<div class="number">04</div>
+
+<div class="icon">⚙️</div>
+
+<h2>C Programming Course</h2>
+
+<p>
+Enhanced knowledge in C language programming and software development fundamentals.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 5 -->
+
+<div class="cert-card">
+
+<div class="number">05</div>
+
+<div class="icon">📘</div>
+
+<h2>English Grammar-I</h2>
+
+<p>
+Improved communication and grammar skills through structured English language learning.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 6 -->
+
+<div class="cert-card">
+
+<div class="number">06</div>
+
+<div class="icon">🖥️</div>
+
+<h2>CompTIA IT Fundamentals</h2>
+
+<p>
+Learned operating systems, computer hardware, software basics, and IT foundational concepts.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 7 -->
+
+<div class="cert-card">
+
+<div class="number">07</div>
+
+<div class="icon">💾</div>
+
+<h2>Introduction to Unix</h2>
+
+<p>
+Gained knowledge about Unix commands, file systems, and operating system basics.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 8 -->
+
+<div class="cert-card">
+
+<div class="number">08</div>
+
+<div class="icon">🗄️</div>
+
+<h2>DBMS & SQL</h2>
+
+<p>
+Learned database management systems, SQL queries, tables, joins, and database operations.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 9 -->
+
+<div class="cert-card">
+
+<div class="number">09</div>
+
+<div class="icon">📊</div>
+
+<h2>Database Management System</h2>
+
+<p>
+Studied relational databases, normalization, ER models, and database design concepts.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 10 -->
+
+<div class="cert-card">
+
+<div class="number">10</div>
+
+<div class="icon">🔗</div>
+
+<h2>Introduction to MCP</h2>
+
+<p>
+Learned fundamentals of Model Context Protocol and AI integration concepts.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 11 -->
+
+<div class="cert-card">
+
+<div class="number">11</div>
+
+<div class="icon">🤖</div>
+
+<h2>AI Fluency: Framework & Foundations</h2>
+
+<p>
+Explored AI concepts, frameworks, tools, and foundational artificial intelligence principles.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 12 -->
+
+<div class="cert-card">
+
+<div class="number">12</div>
+
+<div class="icon">🚀</div>
+
+<h2>AI Fluency for Students</h2>
+
+<p>
+Developed understanding of AI applications, student productivity tools, and AI technologies.
+</p>
+
+</div>
+
+<!-- CERTIFICATE 13 -->
+
+<div class="cert-card">
+
+<div class="number">13</div>
+
+<div class="icon">✨</div>
+
+<h2>Claude 101</h2>
+
+<p>
+Completed introductory learning about AI assistants, prompting, and modern AI workflows.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

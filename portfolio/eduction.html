@@ -1,0 +1,357 @@
+<!-- ===================== education.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Education</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f2ea;
+    font-family:'Poppins',sans-serif;
+    color:#2f4732;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:30px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd6c8;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:800;
+    font-family:'Montserrat',sans-serif;
+}
+
+.nav-links{
+    display:flex;
+    gap:70px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#2f4732;
+    font-size:18px;
+    position:relative;
+}
+
+.active::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:3px;
+    background:#2f4732;
+    left:0;
+    bottom:-12px;
+}
+
+/* HERO */
+
+.hero{
+    padding:60px 70px 20px;
+    position:relative;
+}
+
+.hero h1{
+    font-size:120px;
+    font-family:'Montserrat',sans-serif;
+    line-height:0.9;
+    letter-spacing:2px;
+    font-weight:800;
+}
+
+.outline{
+    font-size:120px;
+    font-family:'Montserrat',sans-serif;
+    color:transparent;
+    -webkit-text-stroke:1px #d9d2c7;
+    line-height:1;
+}
+
+.hero-text{
+    position:absolute;
+    right:80px;
+    top:90px;
+    width:320px;
+    border-left:4px solid #2f4732;
+    padding-left:25px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* MAIN CARD */
+
+.main-box{
+    width:92%;
+    margin:30px auto 60px;
+    border:2px solid #455b46;
+    border-radius:25px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+}
+
+/* LEFT */
+
+.left{
+    background:linear-gradient(135deg,#243c26,#425b3f);
+    color:white;
+    padding:55px;
+}
+
+.left h2,
+.right h2{
+    font-size:26px;
+    font-family:'Montserrat';
+    margin-bottom:50px;
+}
+
+.timeline{
+    position:relative;
+    margin-left:20px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:6px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:#dfe8dc;
+}
+
+.item{
+    position:relative;
+    margin-bottom:55px;
+    padding-left:40px;
+}
+
+.item::before{
+    content:'';
+    position:absolute;
+    left:-3px;
+    top:8px;
+    width:18px;
+    height:18px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.year{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.desc{
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* RIGHT */
+
+.right{
+    background:#f5f2ea;
+    padding:55px;
+}
+
+.semester{
+    position:relative;
+    margin-left:20px;
+}
+
+.semester::before{
+    content:'';
+    position:absolute;
+    left:6px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:#425b3f;
+}
+
+.sem-item{
+    position:relative;
+    padding-left:45px;
+    margin-bottom:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.sem-item::before{
+    content:'';
+    position:absolute;
+    left:-3px;
+    top:8px;
+    width:18px;
+    height:18px;
+    background:#425b3f;
+    border-radius:50%;
+}
+
+.sem-name{
+    font-size:20px;
+    font-weight:600;
+}
+
+.sgpa{
+    font-size:22px;
+    font-weight:700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.main-box{
+    grid-template-columns:1fr;
+}
+
+.hero h1,
+.outline{
+    font-size:70px;
+}
+
+.hero-text{
+    position:static;
+    margin-top:30px;
+    width:100%;
+}
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">Portfolio.</div>
+
+<div class="nav-links">
+<a href="index.html">HOME</a>
+<a href="skills.html">SKILLS</a>
+<a href="education.html" class="active">EDUCATION</a>
+<a href="projects.html">PROJECTS</a>
+<a href="contact.html">CONTACT</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>EDUCATION</h1>
+<div class="outline">EDUCATION</div>
+
+<div class="hero-text">
+My academic journey that helped me in building a strong foundation for my career.
+</div>
+
+</section>
+
+<!-- MAIN BOX -->
+
+<div class="main-box">
+
+<!-- LEFT -->
+
+<div class="left">
+
+<h2>EDUCATION</h2>
+
+<div class="timeline">
+
+<div class="item">
+<div class="year">2022</div>
+<div class="title">SSLC</div>
+<div class="desc">Completed SSLC</div>
+</div>
+
+<div class="item">
+<div class="year">2024</div>
+<div class="title">12th</div>
+<div class="desc">Completed Higher Secondary (12th)</div>
+</div>
+
+<div class="item">
+<div class="year">2024 - Present</div>
+<div class="title">Kishkinda University</div>
+<div class="desc">Bachelor of Computer Applications (BCA)<br>Currently in 4th Semester</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right">
+
+<h2>SEMESTER PERFORMANCE</h2>
+
+<div class="semester">
+
+<div class="sem-item">
+<div class="sem-name">3rd Semester</div>
+<div class="sgpa">9.35 SGPA</div>
+</div>
+
+<div class="sem-item">
+<div class="sem-name">2nd Semester</div>
+<div class="sgpa">9.14 SGPA</div>
+</div>
+
+<div class="sem-item">
+<div class="sem-name">1st Semester</div>
+<div class="sgpa">9.24 SGPA</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
